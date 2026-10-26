@@ -14,10 +14,14 @@ Each student works in their **own copy** so nobody overwrites anyone else's work
 
 ### One-time setup
 
-1. **Get the setup script.** On this repo's GitHub page choose **Code > Download ZIP**, unzip it, and open the `setup` folder. (If the repo is private, your teacher will share the `setup` folder with you instead.)
+1. **Download the setup file for your computer.** You only need this one file; the script makes your copy of the project for you in step 4. Open the file's GitHub page and click the download icon (**Download raw file**) at the top right of the code box:
+   - **Mac:** [Setup-Mac.command](https://github.com/wickedcube/IXD-AR-Starter/blob/main/setup/Setup-Mac.command)
+   - **Windows:** [Setup-Windows.bat](https://github.com/wickedcube/IXD-AR-Starter/blob/main/setup/Setup-Windows.bat) (it fetches the rest by itself)
+
+   Your teacher may also hand you the file directly. Every copy of the project also contains it in the `setup` folder.
 2. **Run it:**
-   - **Mac:** right-click `Setup-Mac.command`, choose **Open**, then **Open** again.
-   - **Windows:** double-click `Setup-Windows.bat`. If Windows warns you, click **More info > Run anyway**.
+   - **Mac:** find the file in your Downloads folder, right-click `Setup-Mac.command`, choose **Open**, then **Open** again.
+   - **Windows:** double-click `Setup-Windows.bat` in your Downloads folder. If Windows warns you, click **More info > Run anyway**.
 
    The script shows its progress as **[1/5] ... [5/5]** and installs **GitHub Desktop** (it includes Git), **Unity Hub**, and **Unity 6000.3.8f1 with Android build support**. Unity is several GB, so it downloads in the background (about 20 to 40 minutes) while the script walks you through making your copy (steps 4 and 5) and opens the Vuforia download page (used in **Setup** step 4 below). At the end it prints a summary of what was installed and a list of what to do next. Windows may ask for administrator permission; click **Yes**. It is safe to run again if something fails: it skips what's already installed and resumes the rest.
 3. **Sign in** to GitHub Desktop with your GitHub account (free at [github.com](https://github.com/signup)). The account also supplies your name and email for saves.
@@ -25,7 +29,7 @@ Each student works in their **own copy** so nobody overwrites anyone else's work
 5. **Download your copy to your computer.** Paste your repo address when the setup script asks (it opens the clone window for you), or in GitHub Desktop choose **File > Clone repository > URL**, paste the address, and click **Clone**.
 6. In **Unity Hub** choose **Add > Add project from disk** and pick the cloned folder. The first open takes a few minutes while Unity rebuilds its cache.
 
-> **Teacher, once:** tick **Settings > General > Template repository** on this repo's GitHub page. The repo must be public so students can download the `setup` folder without a login; each student's own copy is private.
+> **Teacher, once:** tick **Settings > General > Template repository** on this repo's GitHub page. The repo must be public so students can download the setup file and use the template without extra access; each student's own copy is private.
 
 **No template?** Click **Fork** at the top right of the repo page instead and clone the fork. **No GitHub at all?** Copy the whole project folder and rename it `IXD-AR-<yourname>`. You lose online backup, so copy the folder to a cloud drive or USB stick now and then.
 
@@ -41,7 +45,7 @@ Do this once in your copy:
 
 ## Setup
 
-1. Open the folder in Unity Hub and open it with Unity 6000.3.8f1.
+1. If you haven't already, open the folder in Unity Hub (**Add > Add project from disk**) with Unity 6000.3.8f1.
 2. Run **IXD > Apply Android AR Settings** in the Unity menu bar. This sets IL2CPP, ARM64, min API 26, OpenGLES3 and a placeholder package name (`com.ixd.arstarter`). Change the package name in Player Settings.
 3. Switch the platform to Android in **File > Build Profiles**.
 4. **Install Vuforia** (once per copy). The SDK isn't stored in this repo, since it can't be redistributed and is too big for normal git. Download `add-vuforia-package-<version>.unitypackage` from the [Vuforia Developer Portal](https://developer.vuforia.com/downloads/sdk) (free account; the setup script opens this page). Then in Unity choose **Assets > Import Package > Custom Package...**, pick the file, import everything, and click **Update** when the "Add Vuforia Engine Package" window appears. Wait for Unity to finish importing.
