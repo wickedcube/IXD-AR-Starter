@@ -21,6 +21,12 @@ Each student works in their **own copy** so nobody overwrites anyone else's work
    Your teacher may also hand you the file directly. Every copy of the project also contains it in the `setup` folder.
 2. **Run it:**
    - **Mac:** find the file in your Downloads folder, right-click `Setup-Mac.command`, choose **Open**, then **Open** again.
+     If macOS says you don't have permission to run it (browsers remove that permission from downloads), open the **Terminal** app, paste the line below, and press Enter. It runs the same script without needing the download:
+
+     ```bash
+     bash <(curl -fsSL https://raw.githubusercontent.com/wickedcube/IXD-AR-Starter/main/setup/Setup-Mac.command)
+     ```
+
    - **Windows:** double-click `Setup-Windows.bat` in your Downloads folder. If Windows warns you, click **More info > Run anyway**.
 
    The script shows its progress as **[1/5] ... [5/5]** and installs **GitHub Desktop** (it includes Git), **Unity Hub**, and **Unity 6000.3.8f1 with Android build support**. Unity is several GB, so it downloads in the background (about 20 to 40 minutes) while the script walks you through making your copy (steps 4 and 5) and opens the Vuforia download page (used in **Setup** step 4 below). At the end it prints a summary of what was installed and a list of what to do next. Windows may ask for administrator permission; click **Yes**. It is safe to run again if something fails: it skips what's already installed and resumes the rest.
