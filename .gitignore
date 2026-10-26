@@ -1,0 +1,41 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# IDE
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+
+# Unity generated
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+crashlytics-build.properties
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Xcode / Gradle output
+/[Ii]os[Bb]uild/
+/[Aa]ndroid[Bb]uild/
+
+.DS_Store
+
+# Vuforia SDK is downloaded by each student (not redistributed)
+*.tgz
